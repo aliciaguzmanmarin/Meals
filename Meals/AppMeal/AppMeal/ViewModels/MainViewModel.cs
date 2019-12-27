@@ -9,6 +9,7 @@ namespace AppMeal.ViewModels
     {
         #region Properties
         public List<Meal> ListMeal { get; set; }
+
         #endregion
 
         #region Singleton
@@ -28,12 +29,13 @@ namespace AppMeal.ViewModels
         #region Constructor
         public MainViewModel()
         {
-
+            instance = this;
+            this.Login = new LoginViewModel();
         }
         #endregion
 
         #region ViewModels
-        public MealViewModel contactsViewModel { get; set; }
+        public LoginViewModel Login { get; set; }
         #endregion
 
     }
