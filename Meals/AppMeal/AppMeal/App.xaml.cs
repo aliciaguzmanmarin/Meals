@@ -12,7 +12,7 @@ namespace AppMeal
         {
             InitializeComponent();
 
-            MainPage = new MealPage();
+            MainPage = new MealLoginPage();
         }
 
         protected override void OnStart()
